@@ -188,7 +188,7 @@ div.airquality, div.wildfires {
 		var popup;
 		if (row.Type == 'LTE') {
 			popup ='<div style="text-align:center;"><div class="info">'+row.Name+', '+row.City+'</div><div class="popcontent"><p>'+row.Content+'</p></div>';
-		} ifelse (row.Type == 'Art') {
+		} else if (row.Type == 'Art') {
 			popup ='<div style="text-align:center;"><div class="info">'+row.Name+', '+row.City+'</div><div class="popdate">'+row.Date+'</div><div class="popcontent"><div class="popcontent"><p>'+row.Content+'</p></div>';
 		} else {
 			popup = '<div style="text-align:center;"><div class="info">'+row.Name+', '+row.City+'</div><div class="popdate">'+row.Date+' '+row.Time+' '+Timezone+'</div><div class="popcontent"><p>'+row.Content+'</p></div>';
